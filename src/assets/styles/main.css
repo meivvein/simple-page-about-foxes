@@ -3,6 +3,18 @@
     border: none;
     background: none;
     cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter .25s ease-in-out,
+                transform .1s ease-out;
+
+    &.active,
+    &:hover {
+        filter: grayscale(0%);
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     img {
         max-height: 100%;

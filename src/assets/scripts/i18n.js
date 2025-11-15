@@ -1,11 +1,19 @@
 const translatePage = langData => {
     document.documentElement.lang = langData['lang']
     document.title = langData['title']
+    highlightActiveLanguageButton(langData['lang'])
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n')
         element.textContent = langData[key] ?? ''
         if (langData[key] === undefined)
             console.warn(`Missing key: '${key}' in ${langData['lang']}.json`)
+    })
+}
+
+const highlightActiveLanguageButton = activeLang => {
+    document.querySelectorAll('button[data-lang]').forEach(btn => {
+        const lang = btn.getAttribute('data-lang')
+        btn.classList.toggle('active', lang === activeLang)
     })
 }
 
