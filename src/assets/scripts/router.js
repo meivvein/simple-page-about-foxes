@@ -6,8 +6,20 @@ const displayPage = html => {
 
 const display404Page = () => {
     const app = document.getElementById('app')
-    app.innerHTML = '<h1 data-i18n="error.404"></h1>'
+    app.innerHTML = `
+        <h1 data-i18n="error.404"></h1>
+        <p data-i18n="error.404.get-a-floof"></p>
+        <img id="floof" src="" alt="Floof">
+        <div>
+            <span data-i18n="powered-by"></span>
+            <a href="https://randomfox.ca/" target="_blank">RandomFox</a>
+        </div>
+    `
     app.dispatchEvent(new CustomEvent('contentLoaded'))
+    fetch('https://randomfox.ca/floof/')
+        .then(response => response.json())
+        .then(data => document.getElementById('floof').src = data['image'])
+        .catch(err => console.error(err))
 }
 
 const fetchPageHTML = async page => {

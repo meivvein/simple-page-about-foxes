@@ -4,5 +4,7 @@
   "nav.home": "Home",
   "nav.species": "Species",
   "nav.about": "About",
-  "error.404": "404 Page Not Found"
+  "error.404": "404 Page Not Found",
+  "error.404.get-a-floof": "Maybe we don't have the page you are looking for... but surely you just wanted to see some more foxes! And you know what? We have a very special floof just for you!",
+  "powered-by": "Powered by"
 }

@@ -4,5 +4,7 @@
   "nav.home": "Strona Główna",
   "nav.species": "Gatunki",
   "nav.about": "O Mnie",
-  "error.404": "404 Strony Nie Znaleziono"
+  "error.404": "404 Strony Nie Znaleziono",
+  "error.404.get-a-floof": "Może i nie mamy strony której szukasz... ale bądźmy ze sobą szczerzy... po prostu chciałeś zobaczyć więcej lisów. I wiesz co? Mamy futrzaka specjalnie dla Ciebie :3",
+  "powered-by": "Dostarczone przez"
 }
