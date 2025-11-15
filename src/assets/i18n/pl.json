@@ -1,5 +1,8 @@
 {
   "lang": "pl",
   "title": "Prosta Strona o Lisach",
-  "hello-world": "Witaj, świecie!"
+  "hello-world": "Witaj, świecie!",
+  "nav.home": "Strona Główna",
+  "nav.species": "Gatunki",
+  "nav.about": "O Mnie"
 }

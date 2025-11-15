@@ -1,5 +1,8 @@
 {
   "lang": "en",
   "title": "Simple Page About Foxes",
-  "hello-world": "Hello, world!"
+  "hello-world": "Hello, world!",
+  "nav.home": "Home",
+  "nav.species": "Species",
+  "nav.about": "About"
 }
