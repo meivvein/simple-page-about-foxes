@@ -1,3 +1,70 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex: 1;
+    }
+}
+
+.container {
+    width: min(1200px, 95vw);
+    margin-inline: auto;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.85);
+    color: whitesmoke;
+
+    * {
+        color: inherit;
+    }
+
+    nav {
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        & > * {
+            display: block;
+        }
+    }
+
+    ul, ol {
+        display: flex;
+        gap: .75em;
+    }
+
+    li {
+        align-content: center;
+    }
+
+    a {
+        display: inline-block;
+        height: 100%;
+        padding: 0 .5em;
+        align-content: center;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: background .25s ease-in-out;
+
+        &:hover {
+            background: rgba(245, 245, 245, 0.25);
+        }
+    }
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+}
+
 .lang-button {
     height: 2rem;
     border: none;
@@ -18,5 +85,15 @@
 
     img {
         max-height: 100%;
+    }
+}
+
+.floof-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+
+    img {
+        max-height: 67.5vh;
     }
 }

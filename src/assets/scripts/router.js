@@ -7,12 +7,16 @@ const displayPage = html => {
 const display404Page = () => {
     const app = document.getElementById('app')
     app.innerHTML = `
-        <h1 data-i18n="error.404"></h1>
-        <p data-i18n="error.404.get-a-floof"></p>
-        <img id="floof" src="" alt="Floof">
-        <div>
-            <span data-i18n="powered-by"></span>
-            <a href="https://randomfox.ca/" target="_blank">RandomFox</a>
+        <div class="container">
+            <h1 data-i18n="error.404"></h1>
+            <p data-i18n="error.404.get-a-floof"></p>
+            <div class="floof-container">
+                <div>
+                    <img id="floof" src="" alt="Floof">
+                    <span data-i18n="powered-by"></span>
+                    <a href="https://randomfox.ca/" target="_blank">RandomFox</a>
+                </div>
+            </div>
         </div>
     `
     app.dispatchEvent(new CustomEvent('contentLoaded'))

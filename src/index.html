@@ -10,27 +10,36 @@
     <script src="assets/scripts/router.js" defer></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#/" data-i18n="nav.home"></a></li>
-            <li><a href="#/species" data-i18n="nav.species"></a></li>
-            <li><a href="#/about" data-i18n="nav.about"></a></li>
-        </ul>
-        <ul>
-            <li lang="en">
-                <button class="lang-button" data-lang="en">
-                    <img src="assets/images/en.svg" alt="English">
-                </button>
-            </li>
-            <li lang="pl">
-                <button class="lang-button" data-lang="pl">
-                    <img src="assets/images/pl.svg" alt="Polski">
-                </button>
-            </li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <div class="container">
+            <nav>
+                <ol>
+                    <li><a href="#/" data-i18n="nav.home"></a></li>
+                    <li><a href="#/species" data-i18n="nav.species"></a></li>
+                    <li><a href="#/about" data-i18n="nav.about"></a></li>
+                </ol>
+                <ul>
+                    <li lang="en">
+                        <button class="lang-button" data-lang="en">
+                            <img src="assets/images/en.svg" alt="English">
+                        </button>
+                    </li>
+                    <li lang="pl">
+                        <button class="lang-button" data-lang="pl">
+                            <img src="assets/images/pl.svg" alt="Polski">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <main>
         <div id="app"></div>
     </main>
+    <div class="container">
+        <footer>
+            <p>Bartosz Walczak 2025 &bull; <a href="https://github.com/meivvein" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
 </body>
 </html>
