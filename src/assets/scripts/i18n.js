@@ -31,8 +31,10 @@ const changeLanguage = lang => {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    const userPreferredLanguage = localStorage.getItem('language') || 'en'
-    changeLanguage(userPreferredLanguage)
+    document.getElementById('app').addEventListener('contentLoaded', () => {
+        const userPreferredLanguage = localStorage.getItem('language') || 'en'
+        changeLanguage(userPreferredLanguage)
+    })
 
     document.querySelectorAll('button[data-lang]').forEach(btn => {
         const lang = btn.getAttribute('data-lang')

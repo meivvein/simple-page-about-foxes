@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "title": "Simple Page About Foxes",
-  "hello-world": "Hello, world!",
   "nav.home": "Home",
   "nav.species": "Species",
-  "nav.about": "About"
+  "nav.about": "About",
+  "error.404": "404 Page Not Found"
 }

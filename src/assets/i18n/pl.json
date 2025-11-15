@@ -1,8 +1,8 @@
 {
   "lang": "pl",
   "title": "Prosta Strona o Lisach",
-  "hello-world": "Witaj, świecie!",
   "nav.home": "Strona Główna",
   "nav.species": "Gatunki",
-  "nav.about": "O Mnie"
+  "nav.about": "O Mnie",
+  "error.404": "404 Strony Nie Znaleziono"
 }
