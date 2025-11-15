@@ -5,22 +5,23 @@
     <title>Simple Page About Foxes</title>
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <script src="assets/scripts/i18n.js" defer></script>
 </head>
 <body>
     <nav>
         <ul>
             <li lang="en">
-                <button class="lang-button">
+                <button class="lang-button" data-lang="en">
                     <img src="assets/images/en.svg" alt="English">
                 </button>
             </li>
             <li lang="pl">
-                <button class="lang-button">
+                <button class="lang-button" data-lang="pl">
                     <img src="assets/images/pl.svg" alt="Polski">
                 </button>
             </li>
         </ul>
     </nav>
-    <h1>Hello, world!</h1>
+    <h1 data-i18n="hello-world"></h1>
 </body>
 </html>
