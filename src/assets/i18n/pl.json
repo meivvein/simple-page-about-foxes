@@ -4,6 +4,10 @@
   "nav.home": "Strona Główna",
   "nav.species": "Gatunki",
   "nav.about": "O Mnie",
+  "about.who-are-you.title": "Kim Ty właściwie jesteś?",
+  "about.who-are-you.content": "Jestem osobą, która uwielbia lisy, rzecz jasna! Jeśli jeszcze tego nie zauważyłeś... Cóż, jestem również aspirującym programistą, ale czy to naprawdę ma znaczenie, kiedy możesz oglądać te wszystkie lisy? Ale jeśli faktycznie Cię to interesuje to możesz zajrzeć na mojego",
+  "about.who-are-you.content.link": "githuba",
+  "about.doodle-caption": "Tak dobrze się bawiłem robiąc tę stronę, że musiałem narysować lisa",
   "error.404": "404 Strony Nie Znaleziono",
   "error.404.get-a-floof": "Może i nie mamy strony której szukasz... ale bądźmy ze sobą szczerzy... po prostu chciałeś zobaczyć więcej lisów. I wiesz co? Mamy futrzaka specjalnie dla Ciebie :3",
   "powered-by": "Dostarczone przez"

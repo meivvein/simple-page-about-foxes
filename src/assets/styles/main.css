@@ -65,6 +65,20 @@ footer {
     text-align: center;
 }
 
+section {
+    margin-top: 2rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 1.5rem clamp(2rem, 5vw, 4rem);
+
+    @media (max-width: 80ch) {
+        grid-template-columns: 1fr;
+    }
+}
+
 .lang-button {
     height: 2rem;
     border: none;

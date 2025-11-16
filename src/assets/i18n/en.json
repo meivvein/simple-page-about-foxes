@@ -4,6 +4,10 @@
   "nav.home": "Home",
   "nav.species": "Species",
   "nav.about": "About",
+  "about.who-are-you.title": "Who are you anyway?",
+  "about.who-are-you.content": "I'm a person that loves foxes, obviously! If you hadn't noticed it yet... Well I'm also an aspiring dev but does it really matter when you can look at all these foxes? But if you're really that interested then you can check my",
+  "about.who-are-you.content.link": "github",
+  "about.doodle-caption": "I had so much fun making this site that I had to draw a fox",
   "error.404": "404 Page Not Found",
   "error.404.get-a-floof": "Maybe we don't have the page you are looking for... but surely you just wanted to see some more foxes! And you know what? We have a very special floof just for you!",
   "powered-by": "Powered by"
