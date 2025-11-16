@@ -11,18 +11,26 @@ const display404Page = () => {
             <h1 data-i18n="error.404"></h1>
             <p data-i18n="error.404.get-a-floof"></p>
             <div class="floof-container">
-                <div>
-                    <img id="floof" src="" alt="Floof">
-                    <span data-i18n="powered-by"></span>
-                    <a href="https://randomfox.ca/" target="_blank">RandomFox</a>
-                </div>
+                <figure>
+                    <a id="floof-link" target="_blank">
+                        <img id="floof" src="" alt="Floof">
+                    </a>
+                    <figcaption>
+                        <span data-i18n="powered-by"></span>
+                        <a id="randomfox" href="https://randomfox.ca/" target="_blank">RandomFox</a>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     `
     app.dispatchEvent(new CustomEvent('contentLoaded'))
     fetch('https://randomfox.ca/floof/')
         .then(response => response.json())
-        .then(data => document.getElementById('floof').src = data['image'])
+        .then(data => {
+            document.getElementById('floof').src = data['image']
+            document.getElementById('floof-link').href = data['link']
+            document.getElementById('randomfox').href = data['link']
+        })
         .catch(err => console.error(err))
 }
 
