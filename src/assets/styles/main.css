@@ -60,6 +60,27 @@ body {
     }
 }
 
+.hero {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    max-height: 70vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#app > .hero:first-child {
+    margin-top: -4rem;
+}
+
 footer {
     padding: 1rem 0;
     text-align: center;
