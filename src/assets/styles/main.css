@@ -1,10 +1,28 @@
+:root {
+    --color-sage: #a5b68d;
+    --color-peach: #eCdfcc;
+    --color-beige: #fcfaee;
+    --color-orange: #da8359;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-peach);
 
     main {
         flex: 1;
+    }
+}
+
+a {
+    color: inherit;
+    transition: color .1s ease-in-out;
+
+    &:active,
+    &:hover {
+        color: var(--color-orange);
     }
 }
 
@@ -19,7 +37,7 @@ body {
     overflow: hidden;
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.85);
-    color: whitesmoke;
+    color: var(--color-beige);
 
     * {
         color: inherit;
@@ -66,6 +84,7 @@ body {
     max-height: 70vh;
     overflow: hidden;
     position: relative;
+    background-color: black;
     z-index: -1;
 
     img {
@@ -84,6 +103,12 @@ body {
 footer {
     padding: 1rem 0;
     text-align: center;
+    background-color: var(--color-sage);
+
+    a:active,
+    a:hover {
+        color: var(--color-beige);
+    }
 }
 
 section {
