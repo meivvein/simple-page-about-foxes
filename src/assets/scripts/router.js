@@ -35,7 +35,7 @@ const display404Page = () => {
 }
 
 const fetchPageHTML = async page => {
-    const response = await fetch(`/pages/${page}.html`)
+    const response = await fetch(`pages/${page}.html`)
     if (response.ok) return response.text()
     throw new Error(`Could not fetch page: ${page}.html`)
 }
