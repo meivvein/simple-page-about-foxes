@@ -21,7 +21,7 @@ body {
     }
 }
 
-h1, h3 {
+h1, h3, h4 {
     font-family: "Kalam", cursive;
     font-weight: 700;
     font-style: normal;
@@ -241,6 +241,51 @@ section {
     @media (max-width: 80ch) {
         grid-template-columns: 1fr;
         grid-template-areas: "text" "img";
+    }
+}
+
+.species-container {
+    margin-bottom: 3rem;
+}
+
+.species-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "text img";
+    gap: 1.5rem 3rem;
+
+    @media (max-width: 90ch) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "text" "img";
+    }
+
+    .card-text {
+        grid-area: text;
+
+        header {
+            margin-bottom: unset;
+            color: var(--color-orange);
+
+            small,
+            small * {
+                color: black;
+            }
+        }
+
+        table th,
+        table td {
+            text-align: left;
+            padding: .25em .75em .25em 0;
+
+            @media (min-width: 120ch) {
+                font-size: larger;
+            }
+        }
+
+    }
+
+    .card-img {
+        grid-area: img;
     }
 }
 
