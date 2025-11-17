@@ -10,10 +10,35 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--color-peach);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 
     main {
         flex: 1;
     }
+}
+
+h1, h3 {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3.9rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 a {
@@ -23,6 +48,19 @@ a {
     &:active,
     &:hover {
         color: var(--color-orange);
+    }
+}
+
+main p {
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+header,
+section,
+article {
+    &:not(:last-child) {
+        margin-bottom: 3rem;
     }
 }
 
@@ -72,8 +110,14 @@ a {
         text-transform: capitalize;
         transition: background .25s ease-in-out;
 
+        &:active,
         &:hover {
             background: rgba(245, 245, 245, 0.25);
+            color: inherit;
+        }
+
+        &.active {
+            font-weight: 900;
         }
     }
 }
@@ -155,5 +199,68 @@ section {
 
     img {
         max-height: 67.5vh;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "text img";
+    gap: 1.5rem 3rem;
+
+    .card-text {
+        grid-area: text;
+    }
+
+    .card-img {
+        grid-area: img;
+    }
+
+    h3 {
+        color: var(--color-sage);
+    }
+}
+
+.card-container :nth-child(odd) .card {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "img text";
+
+    h3 {
+        color: var(--color-orange);
+    }
+}
+
+.card,
+.card-container :nth-child(odd) .card {
+    @media (max-width: 80ch) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "text" "img";
+    }
+}
+
+.big-button {
+    text-align: center;
+    margin: 2rem 0 7rem 0;
+
+    a {
+        font-size: 1.5rem;
+        display: inline-block;
+        padding: 2rem 3rem;
+        border-radius: 3rem;
+        background-color: var(--color-sage);
+        text-decoration: none;
+        transition: background-color .2s ease-in-out;
+
+        &:active,
+        &:hover {
+            color: inherit;
+            background-color: var(--color-orange);
+        }
     }
 }
