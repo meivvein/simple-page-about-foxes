@@ -52,6 +52,7 @@ const router = () => {
         .then(html => displayPage(html))
         .catch(err => console.error(err))
     else display404Page()
+    window.scrollTo(0, 0)
     document.querySelectorAll('a[data-page]').forEach(btn => {
         const page = btn.getAttribute('data-page')
         btn.classList.toggle('active', page === routes[hash])
