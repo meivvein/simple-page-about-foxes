@@ -168,7 +168,7 @@ section {
         grid-template-columns: 1fr;
     }
 
-    a {
+    ul a {
         font-size: larger;
     }
 }
