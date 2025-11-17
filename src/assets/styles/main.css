@@ -167,6 +167,10 @@ section {
     @media (max-width: 80ch) {
         grid-template-columns: 1fr;
     }
+
+    a {
+        font-size: larger;
+    }
 }
 
 .lang-button {
